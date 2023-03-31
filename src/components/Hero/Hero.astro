@@ -1,0 +1,37 @@
+---
+import { Image } from '@astrojs/image/components';
+import Burger from './Burger';
+import HeroText from './HeroText.astro';
+import logo from '../../assets/logo-mobile.png';
+import CtaVerProductos from './CtaVerProductos.astro';
+import Background from './Background.astro';
+---
+
+<div
+  class="sm:screen mobile-landscape:h-[600px] relative h-screen xsm:h-[622px]">
+  <Background />
+
+  <div
+    class="mx-auto flex w-[90%] flex-col items-center justify-center pt-[100px]">
+    <Image
+      alt="logo"
+      src={logo}
+      width={400}
+      height={235}
+      class="xsm:hidden"
+    />
+    <Image
+      alt="logo"
+      src={logo}
+      width={500}
+      height={293}
+      class="hidden xsm:inline"
+    />
+    <div
+      class="absolute bottom-24 left-1/2 mx-auto flex h-44 w-[90%] translate-x-[-50%] flex-col justify-between xsm:bottom-10 xsm:h-36">
+      <HeroText />
+      <CtaVerProductos />
+    </div>
+    <Burger client:load />
+  </div>
+</div>

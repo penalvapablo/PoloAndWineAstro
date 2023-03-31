@@ -1,0 +1,66 @@
+---
+import { Image } from '@astrojs/image/components';
+import bg_mobile from '../../assets/bg-mobile3.jpg';
+import bg_BigDesktop from '../../assets/bg-BigDesktop.jpg';
+import bd_wideDesktop from '../../assets/bg-wideDesktop.jpg';
+import bg_tablet from '../../assets/bg-tablet.jpg';
+import bg_laptop from '../../assets/bg-laptop2.jpg';
+import bg_desktop from '../../assets/bg-desktop2.jpg';
+---
+
+<>
+  <Image
+    format="webp"
+    alt=""
+    src={bg_mobile}
+    width={500}
+    height={908.79}
+    quality={75}
+    class="absolute -z-10 h-screen object-cover xsm:hidden"
+  />
+  <Image
+    format="webp"
+    alt=""
+    src={bg_tablet}
+    width={800}
+    height={622}
+    quality={75}
+    class="absolute -z-10 hidden h-[622px] object-cover md:hidden xsm:inline"
+  />
+  <Image
+    format="webp"
+    alt=""
+    src={bg_laptop}
+    width={1401}
+    height={622}
+    quality={100}
+    class="absolute -z-10 hidden h-[622px] object-cover md:inline xl:hidden"
+  />
+  <Image
+    format="webp"
+    alt=""
+    src={bg_desktop}
+    width={1980}
+    height={622}
+    quality={100}
+    class="absolute -z-10 hidden h-[622px] object-cover xl:inline 2xl:hidden"
+  />
+  <Image
+    format="webp"
+    alt=""
+    src={bg_BigDesktop}
+    width={1980}
+    height={622}
+    quality={100}
+    class="absolute -z-10 hidden h-[622px] object-cover 2xl:inline wide:hidden"
+  />
+  <Image
+    format="webp"
+    alt=""
+    src={bd_wideDesktop}
+    width={2600}
+    height={622}
+    quality={100}
+    class="absolute -z-10 hidden h-[622px] object-cover wide:inline"
+  />
+</>
