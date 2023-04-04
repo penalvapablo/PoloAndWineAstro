@@ -11,13 +11,22 @@ module.exports = {
       three: '#082032',
       four: '#2F4858',
       five: '#FFF6D4',
-      six: '#292929',
+      burger: '#292929',
+      bg: '#FFFCEF',
     },
     extend: {
-      screens: {
-        xsm: { raw: '(min-width: 500px)' },
-        wide: { raw: '(min-width: 1980px)' },
+      dropShadow: {
+        '3xl': '10px 10px 10px rgba(0, 0, 0, 0.25)',
       },
+      screens: {
+        xsm: '475px',
+        ...defaultTheme.screens,
+        wide: '1980px',
+      },
+      // screens: {
+      //   xsm: { raw: '(min-width: 500px)' },
+      //   wide: { raw: '(min-width: 1980px)' },
+      // },
       fontFamily: {
         title: [
           'TangoSans',

@@ -1,0 +1,46 @@
+---
+import { Image } from '@astrojs/image/components';
+import bg_mobile from '../../assets/cursos/bg-cursos-mobile.jpg';
+import bg_tablet from '../../assets/cursos/bg-cursos-tablet.jpg';
+import bg_laptop from '../../assets/cursos/bg-cursos-laptop.jpg';
+import bg_desktop from '../../assets/cursos/bg-cursos-desktop.jpg';
+---
+
+<div>
+  <Image
+    format="webp"
+    alt=""
+    src={bg_mobile}
+    width={640}
+    height={646}
+    quality={100}
+    class="lg absolute -z-10 h-[646px] object-cover sm:hidden"
+  />
+  <Image
+    format="webp"
+    alt=""
+    src={bg_tablet}
+    width={1024}
+    height={500}
+    quality={100}
+    class="absolute -z-10 hidden h-[500px] object-cover sm:inline lg:hidden"
+  />
+  <Image
+    format="webp"
+    alt=""
+    src={bg_laptop}
+    width={1980}
+    height={568}
+    quality={100}
+    class="absolute -z-10 hidden h-[568px] object-cover lg:inline wide:hidden"
+  />
+  <Image
+    format="webp"
+    alt=""
+    src={bg_desktop}
+    width={2600}
+    height={568}
+    quality={100}
+    class="absolute -z-10 hidden h-[568px] object-cover wide:inline"
+  />
+</div>

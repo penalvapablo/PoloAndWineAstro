@@ -1,0 +1,21 @@
+---
+import CardProduct from './CardProduct.astro';
+import { data } from './ProductsData.json';
+---
+
+<div
+  class="mx-auto my-14 grid grid-cols-1 justify-items-center gap-12 md:w-[650px] md:grid-cols-2 xl:w-[1000px] xl:grid-cols-3">
+  {
+    data.map((product) => {
+      return (
+        <CardProduct
+          title={product.title}
+          image={product.image}
+          description={product.description}
+          titleSize={product.titleSize}
+          link={product.link}
+        />
+      );
+    })
+  }
+</div>

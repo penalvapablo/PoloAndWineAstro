@@ -16,12 +16,10 @@ const Burger = () => {
   }
   return (
     <div
-      className={`fixed bottom-0 z-10 xl:hidden bg-six border-t-one border-t-4`}>
-      {mobileNav && <MobileNav />}
+      className={`bg-six fixed bottom-0 z-20 border-t-4 border-t-one xl:hidden`}>
+      {mobileNav && <MobileNav mobileNavFn={mobileNavFn} />}
       <div
-        className={`flex h-[50px] w-screen  justify-center  border-t-one ${
-          mobileNav ? 'bg-six' : ''
-        }`}>
+        className={` flex h-[50px] w-screen  justify-center  border-t-one bg-burger`}>
         <button
           id="burger menu"
           aria-label="burger menu"

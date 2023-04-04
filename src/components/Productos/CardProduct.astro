@@ -1,0 +1,46 @@
+---
+import { Image } from '@astrojs/image/components';
+export interface Props {
+  title: string;
+  image: string;
+  description: string;
+  // titleSize: string;
+  link: string;
+}
+const { title, image, description, link } = Astro.props;
+let titleSize = 3;
+if (link === 'cars') {
+  titleSize = 2.4;
+}
+---
+
+<div
+  class="w-[300px] rounded-xl bg-five drop-shadow-3xl md:pb-3">
+  <div
+    class="relative flex h-[125px] items-center justify-center md:h-[150px]">
+    <Image
+      format="webp"
+      alt=""
+      src={`/src/assets/products/bg-${image}.jpg`}
+      width={300}
+      height={150}
+      quality={75}
+      class="absolute h-[125px] rounded-t-xl object-cover md:h-[150px]"
+    />
+    <h2
+      class={`z-10 text-center font-title text-[2.3rem] text-one leading-10`}>
+      {title}
+    </h2>
+  </div>
+  <p
+    class="mx-auto my-4 h-[6rem] w-[90%] text-center font-text text-base font-medium tracking-wide text-two">
+    {description}
+  </p>
+
+  <!-- VER MAS BTN -->
+  <a
+    href={`products/${link}`}
+    class="text block rounded-b-xl bg-two py-3 text-center font-text text-xl font-semibold leading-7 tracking-wide text-one md:mx-auto md:w-[90%] md:rounded-t-xl"
+    >Ver mas</a
+  >
+</div>
