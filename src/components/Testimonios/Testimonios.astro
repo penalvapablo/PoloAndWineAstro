@@ -1,0 +1,109 @@
+---
+import { Image } from '@astrojs/image/components';
+import stars from '../../assets/stars.png';
+import testimonial1 from '../../assets/testimonials/testimonial1.png';
+import testimonial2 from '../../assets/testimonials/testimonial2.png';
+import testimonial3 from '../../assets/testimonials/testimonial3.png';
+---
+
+<section class="bg-five py-10">
+  <h2
+    class="mx-auto w-[90%] max-w-[64rem] text-center font-title text-4xl text-two sm:text-5xl xl:text-6xl">
+    Testimonios de nuestros clientes
+  </h2>
+  <div
+    class="lg mx-auto flex w-[90%] flex-col items-center justify-center gap-10 py-16 lg:flex-row lg:items-start">
+    <div class="flex flex-col items-center">
+      <Image
+        src={testimonial1}
+        alt="asdasd"
+        width={75}
+        height={75}
+        class="mb-3 mt-2"
+      />
+      <h4 class="text-center font-text text-3xl text-two">
+        Fabi Filip
+      </h4>
+      <Image
+        src={stars}
+        alt="asdasd"
+        width={174}
+        height={30}
+        class="mb-3 mt-2"
+      />
+      <p
+        class="w-[90%] max-w-[23.75rem] text-center font-text text-two lg:text-left">
+        El profesionalismo que Soledad ofrece, la
+        experiencia y los servicios han sido increíbles!
+        Siempre con ganas de volver a contactarla para
+        próximos eventos! Recomiendo con gusto, os aseguró
+        que vale la pena ✅
+      </p>
+    </div>
+    <div class="flex flex-col items-center">
+      <Image
+        src={testimonial3}
+        alt="asdasd"
+        width={75}
+        height={75}
+        class="mb-3 mt-2"
+      />
+      <h4 class="text-center font-text text-3xl text-two">
+        Martín Merino
+      </h4>
+      <Image
+        src={stars}
+        alt="asdasd"
+        width={174}
+        height={30}
+        class="mb-3 mt-2"
+      />
+      <p
+        class="w-[90%] max-w-[23.75rem] text-center font-text text-two lg:text-left">
+        Excelente la atención de la empresa, sobre todo de
+        Soledad que estuvo atenta a cada necesidad de
+        nuestro viaje, los tickets que nos ofrecio eran tal
+        cual nos indicaron, con una excelente ubicación en
+        el estadio, haciendo que sea una experiencia
+        increíble, fue nuestro primer viaje y ya comenzamos
+        a tratar para el mundial de rugby. Gracias por todo
+        Soledad.
+      </p>
+    </div>
+    <div class="flex flex-col items-center">
+      <Image
+        src={testimonial2}
+        alt="asdasd"
+        width={75}
+        height={75}
+        class="mb-3 mt-2"
+      />
+      <h4 class="text-center font-text text-3xl text-two">
+        Eleonora Carrillo
+      </h4>
+      <Image
+        src={stars}
+        alt="asdasd"
+        width={174}
+        height={30}
+        class="mb-3 mt-2"
+      />
+      <p
+        class="w-[90%] max-w-[23.75rem] text-center font-text text-two lg:text-left">
+        Excelente atención, Sole fue súper atenta,
+        detallista y simpática con nosotros. Nos dió las
+        mejores opciones y facilidades para nuestro viaje.
+        Su asesoramiento es un plus, los servicios
+        excelentes. Super recomendada!!
+      </p>
+    </div>
+  </div>
+  <a
+    href="https://wa.link/jdmx80"
+    rel="noreferrer"
+    target="_blank"
+    aria-label="link to whatsapp"
+    class="text mx-auto mb-4 mt-8 block w-[90%] max-w-[20rem] rounded-xl bg-two py-[0.6rem] text-center font-text text-xl font-semibold leading-7 tracking-wide text-one"
+    >Ver todas las reviews de Google</a
+  >
+</section>

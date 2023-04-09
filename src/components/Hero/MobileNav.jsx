@@ -3,7 +3,7 @@ import React from 'react';
 const MobileNav = ({ mobileNavFn }) => {
   return (
     <nav
-      className={`absolute  left-1/2 top-[-300px] h-[300px]  w-[100%] translate-x-[-50%] bg-burger `}>
+      className={`absolute  left-1/2 top-[-300px] z-20  h-[300px] w-[100%] translate-x-[-50%] bg-burger`}>
       <ul className="flex h-[100%] flex-col items-center justify-around border-t-4 border-t-one text-center font-text text-[1.30rem] text-one">
         <li>
           <a

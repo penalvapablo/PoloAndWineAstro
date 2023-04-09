@@ -2,10 +2,11 @@
 import { Image } from '@astrojs/image/components';
 import Burger from './Burger';
 import HeroText from './HeroText.astro';
-import logo from '../../assets/logo-mobile.png';
+import logo_mobile from '../../assets/logo-mobile.png';
+import logo from '../../assets/Logo.png';
 import CtaVerProductos from './CtaVerProductos.astro';
 import Background from './Background.astro';
-import Nav from './Nav.astro';
+import Nav from './Nav';
 ---
 
 <div
@@ -16,7 +17,7 @@ import Nav from './Nav.astro';
     class="mx-auto flex w-[90%] flex-col items-center justify-center pt-[100px]">
     <Image
       alt="logo"
-      src={logo}
+      src={logo_mobile}
       width={400}
       height={235}
       quality={100}
@@ -31,7 +32,7 @@ import Nav from './Nav.astro';
       class="hidden xsm:inline"
     />
     <div
-      class="absolute bottom-24 left-1/2 mx-auto flex h-44 w-[90%] translate-x-[-50%] flex-col justify-between xsm:bottom-10 xsm:h-36">
+      class="absolute bottom-24 left-1/2 mx-auto flex w-[90%] translate-x-[-50%] flex-col justify-between gap-8 xsm:bottom-10">
       <HeroText />
       <CtaVerProductos />
     </div>

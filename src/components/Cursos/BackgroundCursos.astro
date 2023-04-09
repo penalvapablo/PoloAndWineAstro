@@ -1,6 +1,7 @@
 ---
 import { Image } from '@astrojs/image/components';
 import bg_mobile from '../../assets/cursos/bg-cursos-mobile.jpg';
+import bg_tablet2 from '../../assets/cursos/bg-cursos-tablet2.jpg';
 import bg_tablet from '../../assets/cursos/bg-cursos-tablet.jpg';
 import bg_laptop from '../../assets/cursos/bg-cursos-laptop.jpg';
 import bg_desktop from '../../assets/cursos/bg-cursos-desktop.jpg';
@@ -14,7 +15,16 @@ import bg_desktop from '../../assets/cursos/bg-cursos-desktop.jpg';
     width={640}
     height={646}
     quality={100}
-    class="lg absolute -z-10 h-[646px] object-cover sm:hidden"
+    class="absolute -z-10 mt-[-2.5rem] h-[600px] w-full object-cover object-bottom xsm:h-[600px] sm:hidden"
+  />
+  <Image
+    format="webp"
+    alt=""
+    src={bg_tablet2}
+    width={1024}
+    height={600}
+    quality={100}
+    class="absolute -z-10 mt-[-2.5rem] hidden h-[580px] w-full object-cover object-left-bottom sm:inline md:hidden"
   />
   <Image
     format="webp"
@@ -23,7 +33,7 @@ import bg_desktop from '../../assets/cursos/bg-cursos-desktop.jpg';
     width={1024}
     height={500}
     quality={100}
-    class="absolute -z-10 hidden h-[500px] object-cover sm:inline lg:hidden"
+    class="absolute -z-10 mt-[-2.5rem] hidden h-[520px] w-full object-cover object-left-bottom md:inline lg:hidden"
   />
   <Image
     format="webp"
@@ -32,7 +42,7 @@ import bg_desktop from '../../assets/cursos/bg-cursos-desktop.jpg';
     width={1980}
     height={568}
     quality={100}
-    class="absolute -z-10 hidden h-[568px] object-cover lg:inline wide:hidden"
+    class="absolute -z-10 mt-[-2.5rem] hidden h-[450px] w-full object-cover object-left-bottom lg:inline wide:hidden"
   />
   <Image
     format="webp"
@@ -41,6 +51,6 @@ import bg_desktop from '../../assets/cursos/bg-cursos-desktop.jpg';
     width={2600}
     height={568}
     quality={100}
-    class="absolute -z-10 hidden h-[568px] object-cover wide:inline"
+    class="absolute -z-10 mt-[-2.5rem] hidden h-[450px] w-full object-cover object-left-bottom wide:inline"
   />
 </div>
