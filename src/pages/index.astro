@@ -7,9 +7,11 @@ import Cursos from '../components/Cursos/Cursos.astro';
 import Business from '../components/Business/Business.astro';
 import Testimonios from '../components/Testimonios/Testimonios.astro';
 import Contacto from '../components/Contacto/Contacto.astro';
+import Nav from '../components/Hero/Nav';
 ---
 
 <Layout title="Welcome to Astro.">
+  <Nav client:load />
   <Hero />
   <Productos />
   <Cursos />

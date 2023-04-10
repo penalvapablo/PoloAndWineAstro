@@ -9,10 +9,10 @@ import Background from './Background.astro';
 import Nav from './Nav';
 ---
 
-<div
-  class="sm:screen mobile-landscape:h-[600px] relative h-screen xsm:h-[622px]">
+<section
+  class="sm:screen mobile-landscape:h-[600px] relative h-screen xsm:h-[622px] xl:-mt-24">
   <Background />
-  <Nav />
+
   <div
     class="mx-auto flex w-[90%] flex-col items-center justify-center pt-[100px]">
     <Image
@@ -38,4 +38,4 @@ import Nav from './Nav';
     </div>
     <Burger client:load />
   </div>
-</div>
+</section>

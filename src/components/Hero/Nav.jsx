@@ -5,60 +5,62 @@ const Nav = () => {
 
   if (typeof window !== 'undefined') {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 0) {
         setIsScrolled(true);
-        console.log('object');
+        // console.log(true);
       } else {
         setIsScrolled(false);
+        // console.log(false);
       }
     });
   }
 
   return (
-    <nav>
+    <nav
+      className={`sticky top-0 z-50  hidden h-24 w-full items-center justify-center border-one bg-two bg-opacity-0 duration-500 xl:flex ${
+        isScrolled ? 'border-b-2  bg-opacity-100' : ' '
+      }`}>
       <ul
-        className={`absolute left-1/2 hidden w-[45rem] translate-x-[-50%] justify-between pt-9 text-xl text-one lg:flex xl:w-[50rem] ${
-          isScrolled ? 'fixed bg-burger' : ''
-        }`}>
+        className={`w-[45rem] items-center justify-between text-xl text-one lg:flex xl:w-[50rem]`}>
         <li>
           <a
             href="/"
-            className="hover:border-b-2 hover:border-b-one">
+            className="duration-200 hover:text-five">
             Home
           </a>
         </li>
         <li>
           <a
             href="/#products"
-            className="hover:border-b-2 hover:border-b-one">
+            className="duration-200 hover:text-five">
             Productos
           </a>
         </li>
         <li>
           <a
             href="/#courses"
-            className="hover:border-b-2 hover:border-b-one">
+            className="duration-200 hover:text-five">
             Cursos
           </a>
         </li>
         <li>
           <a
             href="/#business"
-            className="hover:border-b-2 hover:border-b-one">
+            className="duration-200 hover:text-five">
             Business Solutions
           </a>
         </li>
         <li>
           <a
             href="/about"
-            className="hover:border-b-2 hover:border-b-one">
+            className="duration-200 hover:text-five">
             Sobre nostrosos
           </a>
         </li>
         <li>
           <a
             href="/#contact"
-            className="hover:border-b-2 hover:border-b-one">
+            className="duration-200 hover:text-five">
             Contacto
           </a>
         </li>
