@@ -1,7 +1,8 @@
 ---
 import Consultar from '../../../components/Consultar.astro';
 import Contacto from '../../../components/Contacto/Contacto.astro';
-import DescargarPdf from '../../../components/DescargarPdf.astro';
+import DescargarCondiciones from '../../../components/DescargarCondiciones.astro';
+import DescargarPrograma from '../../../components/DescargarPrograma.astro';
 import Burger from '../../../components/Hero/Burger';
 import Nav from '../../../components/Nav.astro';
 import Layout from '../../../layouts/Layout.astro';
@@ -47,7 +48,10 @@ import Layout from '../../../layouts/Layout.astro';
       <li>Hoteles indicados o similares.</li>
       <li>Maleteros no incluidos</li>
     </ul>
-    <DescargarPdf title="maravillas" />
+    <DescargarPrograma
+      title="maravillas_inglaterra_escocia_irlanda"
+    />
+    <DescargarCondiciones />
     <Consultar />
 
     <Burger client:load />

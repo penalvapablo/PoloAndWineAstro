@@ -1,9 +1,10 @@
 ---
-import Consultar from '../components/Consultar.astro';
 import Contacto from '../components/Contacto/Contacto.astro';
 import Burger from '../components/Hero/Burger';
 import Nav from '../components/Nav.astro';
 import Layout from '../layouts/Layout.astro';
+import { Image } from '@astrojs/image/components';
+import img from '../assets/Soledad.jpg';
 ---
 
 <Layout title="Polo & Wine - Fútbol">
@@ -11,29 +12,97 @@ import Layout from '../layouts/Layout.astro';
   <main
     class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
     <h1
-      class="mx-auto w-[90%] max-w-5xl text-center font-title text-6xl text-two sm:text-7xl">
-      Cursos de inglés para adultos
+      class="mx-auto w-[90%] max-w-5xl text-center font-title text-[3.2rem] text-two xsm:text-7xl md:text-8xl">
+      Polo & Wine
     </h1>
+    <h2
+      class="mx-auto w-[90%] text-center font-title text-3xl text-two md:text-5xl">
+      Experiencias inolvidables en <br
+        class="hidden xsm:block"
+      /> el Reino Unido y Argentina
+    </h2>
     <p
       class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
-      UK COLLEGE OF ENGLISH es una escuela de idiomas que
-      ofrece cursos de inglés en el centro de Londres a
-      precios asequibles. La escuela forma parte de un grupo
-      educativo que también se ocupa de la educación para
-      adultos. La escuela tiene una ubicación privilegiada
-      en la City de Londres y ofrece cursos generales de
-      inglés, clases de IELTS, lecciones privadas,
-      preparación para el examen OET y más. <br /><br />La
-      escuela tiene muy buenas opiniones de los estudiantes
-      y está reconocida por English UK. También puedes hacer
-      una prueba de nivel gratuita para saber cuál es el
-      curso más adecuado para ti. Si quieres hacer un examen
-      de Cambridge English
+      Nuestro compromiso es brindar <span class="font-bold"
+        >calidad, confiabilidad y seguridad,</span
+      > asegurando que nuestros clientes tengan la mejor experiencia
+      de viaje posible. Ofrecemos una amplia gama de opciones
+      y servicios personalizados para pasajeros individuales
+      y pequeños grupos. Nuestro
+      <span class="font-bold">equipo bilingüe</span> se encarga
+      del diseño y la logística de su viaje, asegurándose de
+      que pueda disfrutar de su experiencia sin complicaciones.<br
+      />
+      <br />
+      Nuestros servicios incluyen asesoramiento profesional sobre
+      actividades grupales. Organizamos competiciones de polo
+      con guías, jugadores y entrenadores especializados. Además,
+      brindamos traslados y alojamiento, coordinación y asistencia
+      en eventos deportivos con personal bilingüe para grupos
+      de incentivos y pasajeros VIP. También podemos reservar
+      entradas para partidos, conciertos y festivales, incluyendo
+      eventos deportivos como polo, tenis, fútbol, rugby y carreras
+      de Fórmula 1, entre otros. Nuestro equipo de expertos lo
+      asesorará sobre las mejores opciones para hacer que su
+      viaje sea inolvidable. <br />
+      <br /> Nuestra misión es ayudar a las personas a
+      <span class="font-bold"
+        >viajar de manera inteligente y segura,</span
+      > promoviendo un viaje responsable y respetando las comunidades
+      y la biodiversidad local. Nos esforzamos por convertirnos
+      en una marca de referencia, principalmente en los países
+      de habla hispana.
     </p>
 
-    <Consultar />
+    <div
+      class="mx-auto flex w-[90%] max-w-[80rem] flex-col items-center xl:mt-16 xl:flex-row xl:gap-12">
+      <Image
+        format="webp"
+        alt=""
+        src={img}
+        width={532.76}
+        height={588}
+        quality={100}
+        class="mx-auto mb-14 mt-10 w-[90%] max-w-[532.76px] xl:my-0"
+      />
+      <div class="">
+        <h3
+          class="mx-auto w-[90%] text-center font-title text-5xl text-two xsm:text-6xl xl:w-full xl:text-start">
+          Soledad Salto
+        </h3>
+        <h4
+          class="mx-auto w-[90%] text-center font-title text-2xl text-two xsm:text-3xl xl:w-full xl:text-start">
+          Especialista en Turismo Deportivo y de Eventos
+        </h4>
 
-    <Burger client:load />
+        <p
+          class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two xl:w-full">
+          Nuestra fundadora, Soledad, cuenta con más de 15
+          años de experiencia en la industria del turismo y
+          una licenciatura en Turismo. También ha completado
+          un curso de posgrado en Community Manager y un
+          certificado en Comunicación en Organizaciones
+          Deportivas.<br />
+          <br />Soledad habla español e inglés con fluidez.
+          Cuenta con amplia experiencia como líder de tours
+          para viajes a Miami, Disney y las Bahamas. Además,
+          coordinó el grupo de élite de la Armada de Chile
+          durante su recorrido por Europa y ha participado
+          en Copas del Mundo, Campeonatos Europeos,
+          Champions League Finals y la Liga Europa.
+        </p>
+
+        <a
+          href="https://wa.link/jdmx80"
+          rel="noreferrer"
+          target="_blank"
+          aria-label="link to whatsapp"
+          class="text mx-auto mb-4 mt-8 block w-80 rounded-xl bg-two py-[0.6rem] text-center font-text text-xl font-semibold leading-7 tracking-wide text-one duration-200 hover:bg-one hover:text-two"
+          >¡Hablemos!</a
+        >
+      </div>
+    </div>
   </main>
+  <Burger client:load />
   <Contacto />
 </Layout>
