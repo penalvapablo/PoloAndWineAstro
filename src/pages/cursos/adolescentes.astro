@@ -1,0 +1,77 @@
+---
+import Consultar from '../../components/Consultar.astro';
+import Contacto from '../../components/Contacto/Contacto.astro';
+import Burger from '../../components/Hero/Burger';
+import Nav from '../../components/Nav.astro';
+import Layout from '../../layouts/Layout.astro';
+import { Image } from '@astrojs/image/components';
+import img from '../../assets/curso_ingles.jpg';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1
+      class="mx-auto w-[90%] max-w-5xl text-center font-title text-5xl text-two sm:text-7xl">
+      Cursos de inglés para niños y adolescentes
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      Como especialistas junior, tenemos una variedad de
+      cursos disponibles diseñados para sumergir a los
+      estudiantes en la cultura anglófona, ofreciendo junto
+      con las actividades tradicionales una amplia gama de
+      cursos especializados como una salida para sus
+      pasiones e intereses especiales. <br /><br />Nuestros
+      cursos de verano se llevan a cabo en las escuelas y
+      universidades más prestigiosas del Reino Unido,
+      Estados Unidos, Canadá e Irlanda, ofreciendo las
+      mejores instalaciones disponibles. Con nuestra
+      conexión con Active Learning Group, también podemos
+      ofrecer a los estudiantes inmersión en campamentos de
+      verano británicos como SuperCamps dedicados a jóvenes
+      aprendices.
+    </p>
+    <Image
+      format="webp"
+      alt=""
+      src={img}
+      width={899.82}
+      height={600}
+      quality={75}
+      class="mx-auto mb-14 mt-7 w-[90%] max-w-[899.82px]"
+    />
+    <h2
+      class="mx-auto w-[90%] max-w-5xl text-center font-title text-5xl text-two sm:text-7xl">
+      Academia de Fútbol
+    </h2>
+
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      La Academia de Fútbol ha sido cuidadosamente
+      planificada para garantizar el equilibrio correcto
+      entre entrenamiento intenso, educación y recreación.
+      Las sesiones de entrenamiento de fútbol serán
+      dirigidas por entrenadores de cualificados. Las
+      sesiones se intercalan con partidos de práctica,
+      pruebas técnicas y sesiones informativas diarias para
+      completar un curso totalmente interactivo. El programa
+      incluirá:
+    </p>
+    <ul
+      class="mx-auto mt-4 w-[80%] max-w-[50rem] list-disc font-text text-lg text-two">
+      <li>Técnicas individuales</li>
+      <li>Portero</li>
+      <li>Dribbling y fintas</li>
+      <li>Circuitos técnicos</li>
+      <li>Tiros libres y saques de esquina</li>
+      <li>Juego limpio</li>
+    </ul>
+
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

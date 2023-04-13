@@ -5,7 +5,7 @@
       "titleSize": "3rem",
       "image": "futbol",
       "description": "Vive lo mejor de la Premier League y descubre el ambiente vibrante de ciudades como Liverpool, Manchester o Londres.",
-      "link": "football"
+      "link": "futbol"
     },
     {
       "title":"Polo",
@@ -26,7 +26,7 @@
       "titleSize": "2.4rem",
       "image": "autos",
       "description": "El Gran Premio de Gran Bretaña de Fórmula 1 en Silverstone es uno de los eventos más importantes del calendario de la Fórmula 1. ",
-      "link": "cars"
+      "link": "autos/formula1"
     },
     {
       "title":"Tenis",

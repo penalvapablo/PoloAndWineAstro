@@ -1,0 +1,43 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Fútbol Inglés
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      La Cartier Queen's Cup es un prestigioso torneo de
+      polo que se celebra anualmente en el Reino Unido. Este
+      evento reúne a los mejores equipos de polo del mundo,
+      compuestos por jugadores de alto nivel y sus caballos
+      de polo de élite.<br /><br /> La copa lleva el nombre de
+      la Reina Isabel II, quien ha sido una apasionada seguidora
+      del deporte durante toda su vida. La competencia se lleva
+      a cabo en el Guards Polo Club, ubicado en Windsor Great
+      Park, cerca del Castillo de Windsor, y es uno de los torneos
+      más antiguos y renombrados del mundo del polo.<br
+      /><br /> La Cartier Queen's Cup atrae a una gran cantidad
+      de espectadores y aficionados al polo de todo el mundo,
+      y es considerada una de las principales competiciones de
+      polo del calendario anual. Además del emocionante juego
+      de polo, el evento también cuenta con una variedad de actividades
+      y entretenimiento para toda la familia, incluyendo música
+      en vivo, comida y bebida de calidad y oportunidades para
+      socializar.
+    </p>
+
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

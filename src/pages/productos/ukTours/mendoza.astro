@@ -1,0 +1,49 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Mendoza Wine Experience
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      ¡Acompáñanos en un viaje inolvidable por la
+      encantadora Mendoza, Argentina!<br /><br /> Día 1 - Llegada
+      a Mendoza. Un guía te esperará y te llevará al alojamiento.<br
+      /><br /> Día 2 - Te llevaremos a recorrer las bodegas más
+      productivas de la región. Presencia el proceso de elaboración
+      del vino y prueba el producto final con la guía de un experto.
+      Luego, visitaremos otra bodega y disfrutaremos de un delicioso
+      almuerzo maridado con sus vinos.<br /><br /> Día 3 - Descubre
+      la hermosa ciudad de Mendoza, con su ciudad antigua, el
+      centro con la Plaza Independencia y el Parque General San
+      Martín. Te llevaremos a los lugares más destacados, incluyendo
+      el Estadio del Mundial y el Teatro Frank Romero Day, donde
+      se celebra la Fiesta de la Vendimia.<br /><br />
+      Descansa tranquilamente en nuestro hotel seleccionado con
+      3 noches de alojamiento y desayuno incluido. Además, nos
+      encargaremos de tus traslados desde y hacia el aeropuerto.
+      <br /><br />Prepárate para una increíble excursión de
+      alta montaña en servicio regular, seguida de traslados
+      a dos bodegas diferentes para almorzar en servicio
+      regular.Nuestro equipo está aquí para asistirte en
+      cada paso del camino, asegurándose de que tu viaje se
+      desarrolle sin problemas y supere todas las
+      expectativas. <br /><br />¡Reserva ahora y permítenos
+      mostrarte la belleza de Mendoza!
+    </p>
+
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

@@ -1,0 +1,44 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Mendoza Wine Experience
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      El Gran Premio de Gran Bretaña de Fórmula 1 en
+      Silverstone es uno de los eventos más importantes del
+      calendario de la Fórmula 1. Este evento se celebra
+      anualmente en el circuito de Silverstone, ubicado en
+      Northamptonshire, Inglaterra.<br /><br /> El circuito de
+      Silverstone es uno de los circuitos más antiguos de la
+      Fórmula 1, con una historia que se remonta a la década
+      de 1950. Es un circuito rápido y desafiante que ha sido
+      testigo de algunos de los momentos más emocionantes y memorables
+      de la Fórmula 1. <br /><br />El Gran Premio de Gran
+      Bretaña es un evento muy popular y atrae a una gran
+      cantidad de aficionados de todo el mundo. La carrera
+      es una de las más emocionantes del calendario de la
+      Fórmula 1 y ha sido testigo de algunos de los momentos
+      más memorables de la historia del deporte.<br /><br />
+      Además de la emocionante carrera de Fórmula 1, el evento
+      también ofrece una amplia gama de actividades y entretenimiento
+      para los asistentes, como música en vivo, comida y bebida
+      de calidad y oportunidades para socializar.
+    </p>
+
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

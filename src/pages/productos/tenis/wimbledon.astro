@@ -1,0 +1,55 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Wimbledon
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      Disfruta en vivo del torneo de tenis más antiguo del
+      mundo, Wimbledon, en Londres. Polo & Wine te invita a
+      vivir la mejor experiencia de Grand Slam y a disfrutar
+      del ambiente festivo de la ciudad. Escoge las fechas
+      de los partidos y déjanos organizar tu viaje a medida.
+      Además, si quieres recorrer otras ciudades del Reino
+      Unido, te ofrecemos alternativas para realizar turismo
+      local. No te pierdas la oportunidad de conocer la
+      "Catedral del Tenis" y saborear las tradicionales
+      frutillas con crema de Wimbledon. Contáctanos para
+      conocer las fechas de salida y todos los paquetes
+      disponibles.
+    </p>
+
+    <h2
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-title text-5xl text-two">
+      Incluye:
+    </h2>
+    <ul
+      class="mx-auto mt-4 w-[80%] max-w-[50rem] list-disc font-text text-lg text-two">
+      <li>Selección de hoteles de 3, 4, o 5 estrellas</li>
+      <li>Traslados in/out</li>
+      <li>
+        Asesoramiento y asistencia bilingüe durante todo el
+        viaje
+      </li>
+      <li>
+        Servicios sujetos a disponibilidad en el momento de
+        realizar la reserva
+      </li>
+      <li>Consultar por otros servicios de este paquete</li>
+    </ul>
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

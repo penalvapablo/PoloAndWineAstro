@@ -1,0 +1,59 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import DescargarPdf from '../../../components/DescargarPdf.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Inglaterra Clásica
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      Circuito donde conocerás lo mejor de Inglaterra, desde
+      los impresionantes paisajes del Distrito de los Lagos
+      hasta ciudades medievales como Londres, York, Barnard
+      Castle, Chester, Stratford, Winchester o la elegante
+      ciudad georgiana de Bath con sus baños romanos y la
+      moderna ciudad de Liverpool, la cuna de los Beatles.
+    </p>
+    <h2
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-title text-5xl text-two">
+      Incluye:
+    </h2>
+    <ul
+      class="mx-auto mt-4 w-[80%] max-w-[50rem] list-disc font-text text-lg text-two">
+      <li>
+        Traslados de entrada y salida del Aeropuerto de
+        Londres Heathrow*
+      </li>
+      <li>
+        1 noche de media pensión & 7 noches alojamiento y
+        desayuno.
+      </li>
+      <li>
+        Entradas a Stonehenge, Gran Hall del Castillo de
+        Winchester, un paseo en barco por el lago Windermere
+        y parada para hacer fotos exteriores en la Casa de
+        Shakespeare.
+      </li>
+      <li>
+        Tour Panorámico de York, Liverpool, Chester, Bath y
+        Londres
+      </li>
+      <li>Hoteles indicados o similares.</li>
+      <li>Maleteros no incluidos</li>
+    </ul>
+    <DescargarPdf title="clasica" />
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

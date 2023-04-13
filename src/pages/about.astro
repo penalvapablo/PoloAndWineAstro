@@ -1,0 +1,39 @@
+---
+import Consultar from '../components/Consultar.astro';
+import Contacto from '../components/Contacto/Contacto.astro';
+import Burger from '../components/Hero/Burger';
+import Nav from '../components/Nav.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1
+      class="mx-auto w-[90%] max-w-5xl text-center font-title text-6xl text-two sm:text-7xl">
+      Cursos de inglés para adultos
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      UK COLLEGE OF ENGLISH es una escuela de idiomas que
+      ofrece cursos de inglés en el centro de Londres a
+      precios asequibles. La escuela forma parte de un grupo
+      educativo que también se ocupa de la educación para
+      adultos. La escuela tiene una ubicación privilegiada
+      en la City de Londres y ofrece cursos generales de
+      inglés, clases de IELTS, lecciones privadas,
+      preparación para el examen OET y más. <br /><br />La
+      escuela tiene muy buenas opiniones de los estudiantes
+      y está reconocida por English UK. También puedes hacer
+      una prueba de nivel gratuita para saber cuál es el
+      curso más adecuado para ti. Si quieres hacer un examen
+      de Cambridge English
+    </p>
+
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

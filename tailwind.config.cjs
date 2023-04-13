@@ -23,10 +23,7 @@ module.exports = {
         ...defaultTheme.screens,
         wide: '1980px',
       },
-      // screens: {
-      //   xsm: { raw: '(min-width: 500px)' },
-      //   wide: { raw: '(min-width: 1980px)' },
-      // },
+
       fontFamily: {
         title: [
           'TangoSans',

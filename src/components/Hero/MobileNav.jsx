@@ -14,14 +14,14 @@ const MobileNav = ({ mobileNavFn }) => {
         </li>
         <li>
           <a
-            href="/#products"
+            href="/#productos"
             onClick={mobileNavFn}>
             Productos
           </a>
         </li>
         <li>
           <a
-            href="/#courses"
+            href="/#cursos"
             onClick={mobileNavFn}>
             Cursos
           </a>
@@ -42,7 +42,7 @@ const MobileNav = ({ mobileNavFn }) => {
         </li>
         <li>
           <a
-            href="/#contact"
+            href="/#contacto"
             onClick={mobileNavFn}>
             Contacto
           </a>

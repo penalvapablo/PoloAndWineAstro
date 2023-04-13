@@ -1,0 +1,40 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Abierto de Palermo
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      ¡No te pierdas el evento más esperado del año en el
+      mundo del polo! El Campeonato Argentino Abierto de
+      Polo, también conocido como Abierto de Palermo, es la
+      máxima competición interclubes a nivel mundial y el
+      quinto torneo de polo más antiguo del mundo.<br /><br
+      /> Este torneo, junto con el Campeonato Abierto de Polo
+      del Hurlingham Club y el Campeonato Abierto de Polo del
+      Tortugas Country Club, forman la Triple Corona del Polo
+      Argentino, una de las competiciones más prestigiosas del
+      mundo del polo. Desde 1893, los mejores equipos del mundo
+      se reúnen anualmente en el Campo Argentino de Polo de Buenos
+      Aires, conocido como la Catedral del Polo, para competir
+      en este emocionante evento. ¡No te pierdas la oportunidad
+      de ser parte de la historia y disfrutar de la mejor acción
+      del polo en vivo!
+    </p>
+
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

@@ -1,0 +1,48 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Cowdray Gold Cup
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      La Gold Cup Cowdray Park Polo Club es un torneo de
+      polo de alta competición que se celebra anualmente en
+      el Reino Unido. Este evento es considerado uno de los
+      más importantes del mundo del polo y reúne a algunos
+      de los mejores jugadores y caballos de polo del mundo. <br
+      /><br />
+      El torneo se lleva a cabo en el Cowdray Park Polo Club,
+      situado en el corazón del hermoso paisaje de Sussex, al
+      sur de Inglaterra. El evento cuenta con la presencia de
+      equipos de todo el mundo, compuestos por jugadores y caballos
+      de alto nivel.<br /><br /> La Gold Cup es un torneo de
+      alto rendimiento que atrae a un gran número de aficionados
+      y entusiastas del polo de todo el mundo. Además de los
+      emocionantes partidos de polo, el evento también ofrece
+      una amplia gama de actividades y entretenimiento para todos
+      los asistentes, como música en vivo, comida y bebida de
+      alta calidad y oportunidades para socializar.<br /><br
+      /> La Gold Cup Cowdray Park Polo Club es uno de los torneos
+      de polo más prestigiosos del mundo y ha sido considerado
+      por muchos como el 'Campeonato del Mundo del Polo'. Este
+      evento ha sido testigo de algunos de los momentos más emocionantes
+      de la historia del polo y ha atraído a algunos de los mejores
+      jugadores de la historia del deporte.
+    </p>
+
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

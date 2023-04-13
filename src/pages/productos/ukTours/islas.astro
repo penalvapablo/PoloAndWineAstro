@@ -1,0 +1,76 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import DescargarPdf from '../../../components/DescargarPdf.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1
+      class="mx-auto max-w-5xl text-center font-title text-7xl text-two">
+      Gran Tour de las Islas Británicas
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      En este circuito podremos ver lo más importante y
+      espectacular de las Islas Británicas con magníficos
+      panoramas en las Tierras Altas de Escocia y en el
+      parque de Snowdonia en Gales. Conocer el místico
+      monumento de dólmenes de Stonehenge, la elegante
+      ciudad de Bath con sus Baños Romanos y la ciudad de
+      Liverpool, cuna de los Beatles. En Irlanda
+      disfrutaremos de los impresionantes Acantilados de
+      Moher, la Calzada del Gigante y la famosa fortaleza de
+      la Roca de Cashel.
+    </p>
+    <h2
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-title text-5xl text-two">
+      Incluye:
+    </h2>
+    <ul
+      class="mx-auto mt-4 w-[80%] max-w-[50rem] list-disc font-text text-lg text-two">
+      <li>
+        Traslado del Hotel de Londres a la estación de tren
+        en Londres.
+      </li>
+      <li>
+        Billete de tren Londres-Edimburgo, clase preferente.
+      </li>
+      <li>
+        Asistencia y traslado de entrada en Edimburgo.
+      </li>
+      <li>
+        7 noches de media pensión / 8 noches alojamiento y
+        desayuno.
+      </li>
+      <li>
+        Cruces en barco entre Escocia e Irlanda y cruce en
+        barco entre Irlanda y Gales.
+      </li>
+      <li>
+        Tour Panorámico de Edimburgo, Dublín, Bath y
+        Liverpool.
+      </li>
+      <li>
+        Entradas a una destilería de whisky, Giant Causeways
+        (Calzada del Gigante), Museo Titanic, Monasterio de
+        Clonmacnoise, los Acantilados de Moher, la Abadía de
+        Kylemore, Stonehenge, Gran Hall del Castillo de
+        Winchester y parada para hacer fotos exteriores en
+        el Castillo de Kilkenny y la Roca de Cashel.
+      </li>
+      <li>Hoteles indicados o similares.</li>
+      <li>Maleteros no incluidos</li>
+    </ul>
+    <DescargarPdf title="islas" />
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

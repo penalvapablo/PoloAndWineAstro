@@ -1,0 +1,57 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Fútbol Inglés
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      Disfruta de la Premier League en vivo y descubre
+      ciudades vibrantes como Liverpool, Manchester y
+      Londres. La Premier League es la liga más emocionante
+      del mundo y ver un partido en vivo es una experiencia
+      única. Los famosos equipos como Chelsea, Manchester
+      United, Liverpool y Tottenham compiten en esta liga
+      con millones de fanáticos en todo el mundo.<br /><br
+      />
+      Polo & Wine te invita a disfrutar de la máxima categoría
+      del futbol inglés en estadios legendarios como Anfield
+      Road, Old Trafford o Stamford Bridge. Contáctanos para
+      diseñar tu viaje a medida y disfrutar del ambiente único
+      que se respira en un campo de fútbol inglés. Pregúntanos
+      por las fechas de salida y el calendario temporada 2022/2023
+      de la Premier League.
+    </p>
+    <h2
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-title text-5xl text-two">
+      Incluye:
+    </h2>
+    <ul
+      class="mx-auto mt-4 w-[80%] max-w-[50rem] list-disc font-text text-lg text-two">
+      <li>Selección de hoteles de 3, 4, o 5 estrellas</li>
+      <li>Traslados in/out</li>
+      <li>
+        Asesoramiento y asistencia bilingüe durante todo el
+        viaje
+      </li>
+      <li>
+        Servicios sujetos a disponibilidad en el momento de
+        realizar la reserva
+      </li>
+      <li>Consultar por otros servicios de este paquete</li>
+    </ul>
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

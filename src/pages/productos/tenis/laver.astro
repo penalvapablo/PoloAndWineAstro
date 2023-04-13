@@ -1,0 +1,46 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Laver Cup
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      La Laver Cup es un torneo de tenis que se celebra
+      anualmente entre equipos de Europa y el resto del
+      mundo. <br /><br />El torneo lleva el nombre del
+      legendario jugador de tenis australiano, Rod Laver, y
+      fue creado por Roger Federer y su equipo de gestión.
+      El torneo se lleva a cabo en un formato de tres días,
+      con una combinación de partidos individuales y dobles.
+      Cada equipo está compuesto por seis jugadores, con
+      tres jugadores clasificados dentro de los primeros
+      diez del ranking ATP y tres jugadores más
+      seleccionados por el capitán del equipo. <br /><br
+      />El objetivo de la Laver Cup es promover la rivalidad
+      amistosa entre equipos de tenis de todo el mundo y
+      proporcionar a los aficionados una experiencia
+      emocionante y única. El torneo se ha convertido en un
+      evento muy popular y atrae a algunos de los mejores
+      jugadores de tenis del mundo.<br /><br /> Además de los
+      emocionantes partidos de tenis, el evento también ofrece
+      una amplia gama de actividades y entretenimiento para los
+      asistentes, como música en vivo, comida y bebida de calidad
+      y oportunidades para socializar.
+    </p>
+
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

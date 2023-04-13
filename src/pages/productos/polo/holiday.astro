@@ -1,0 +1,48 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Polo Holiday
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      Polo&Wine te invita a disfrutar de una experiencia
+      100% argentina que combina naturaleza, gastronomía y
+      lo mejor del polo. A tan solo 50 minutos de Buenos
+      Aires, te espera una aventura inolvidable en la que
+      conocerás la historia del polo, asistirás a partidos
+      en tiempo real y disfrutarás de un día de campo
+      rodeado de caballos de primera categoría y jinetes
+      expertos.
+    </p>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      El Polo Holiday es el evento ideal para aficionados o
+      jugadores profesionales que quieren combinar sus
+      vacaciones con programas de polo de más de 1 día de
+      duración.
+    </p>
+
+    <ul
+      class="mx-auto mt-4 w-[80%] max-w-[50rem] list-disc font-text text-lg text-two">
+      <li>Horario: 9:00 h a 5:00 h</li>
+      <li>
+        Incluye: lecciones de polo, alojamiento, desayuno,
+        almuerzo y cena.
+      </li>
+    </ul>
+    <Consultar />
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>

@@ -1,0 +1,31 @@
+---
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Polo & Wine - Fútbol">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1 class="text-center font-title text-7xl text-two">
+      Tenis
+    </h1>
+    <div
+      class="mx-auto mb-10 mt-16 flex max-w-5xl flex-col flex-wrap items-center justify-center gap-8 lg:flex-row">
+      <a
+        class="flex h-[9rem] w-[90%] max-w-[25rem] items-center justify-center rounded-xl bg-two p-3 text-center font-title text-4xl text-one drop-shadow-3xl"
+        href="/productos/tenis/wimbledon"
+        >Wimbledon</a
+      >
+      <a
+        class="flex h-[9rem] w-[90%] max-w-[25rem] items-center justify-center rounded-xl bg-two p-3 text-center font-title text-4xl text-one drop-shadow-3xl"
+        href="/productos/tenis/laver"
+        >Laver Cup</a
+      >
+    </div>
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>
