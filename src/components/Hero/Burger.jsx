@@ -17,16 +17,19 @@ const Burger = () => {
   return (
     <div
       className={`bg-six fixed bottom-0 z-20 border-t-4 border-t-one xl:hidden`}>
-      {mobileNav && (
-        <>
-          <div
-            onClick={mobileNavFn}
-            className="fixed left-1/2 top-1/2 z-10  h-screen   w-screen translate-x-[-50%] translate-y-[-50%]  bg-burger/50"></div>
-          <MobileNav mobileNavFn={mobileNavFn} />
-        </>
-      )}
+      {/* {mobileNav && (
+        <> */}
+      {/* <div
+        onClick={mobileNavFn}
+        className="fixed left-1/2 top-1/2 z-10  h-screen   w-screen translate-x-[-50%] translate-y-[-50%]  bg-burger/50"></div> */}
+      <MobileNav
+        mobileNav={mobileNav}
+        mobileNavFn={mobileNavFn}
+      />
+      {/* </> */}
+      {/* )} */}
       <div
-        className={`  flex h-[50px] w-screen  justify-center  border-t-one bg-burger`}>
+        className={`  flex h-[50px] w-screen  justify-center  border-t-one bg-two`}>
         <button
           id="burger menu"
           aria-label="burger menu"

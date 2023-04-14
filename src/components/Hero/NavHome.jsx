@@ -21,7 +21,7 @@ const NavHome = () => {
         isScrolled ? 'bg-opacity-100' : ' '
       }`}>
       <ul
-        className={`w-[45rem] items-center justify-between text-xl text-one lg:flex xl:w-[50rem]`}>
+        className={`w-[45rem] items-center justify-between font-title text-xl text-one lg:flex xl:w-[50rem]`}>
         <li>
           <a
             href="/"
