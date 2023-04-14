@@ -2,12 +2,19 @@ import React from 'react';
 
 const MobileNav = ({ mobileNavFn, mobileNav }) => {
   return (
+    // <div
+    //   className={`invisible     ${
+    //     mobileNav && 'visible z-50 opacity-100'
+    //   } xl:hidden `}>
     <div
-      className={`absolute bottom-0 z-50  mb-[54px] flex h-[calc(100vh-55px)] w-screen flex-col items-center  justify-center gap-9 bg-two text-center font-title text-xl   text-one opacity-0  transition-opacity duration-300 ease-out ${
-        mobileNav && ' opacity-100'
-      } xl:hidden `}>
+      className={`absolute  bottom-0  mb-[54px] flex h-[calc(100vh-55px)] w-screen flex-col items-center  justify-center gap-9 bg-two text-center font-title text-xl   text-one   duration-300
+        ${
+          !mobileNav
+            ? 'invisible opacity-0'
+            : 'visible opacity-100'
+        }`}>
       <nav>
-        <ul className=" flex flex-col gap-5  ">
+        <ul className="  flex flex-col gap-5 ">
           <li>
             <a
               href="/"
