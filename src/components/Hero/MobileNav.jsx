@@ -43,7 +43,7 @@ const MobileNav = ({ mobileNavFn, mobileNav }) => {
             <a
               href="/about"
               onClick={mobileNavFn}>
-              Sobre nostrosos
+              Sobre nosotros
             </a>
           </li>
           <li>

@@ -1,0 +1,12 @@
+{
+  "data":[
+
+    {
+      "title":"Tours",
+      "titleSize": "3rem",
+      "image": "tours",
+      "description": "Contamos con una gran variedad de tours, desde recorridos por los lugares más emblemáticos de Londres.",
+      "link": "londonTours"
+    }
+  ]
+}

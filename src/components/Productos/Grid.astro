@@ -3,7 +3,7 @@ import CardProduct from './CardProduct.astro';
 import { data } from './ProductsData.json';
 ---
 
-<div
+<!-- GRID COMPLETO CON GOLDEN TOURS --><!-- <div
   class="mx-auto my-14 grid grid-cols-1 justify-items-center gap-12 md:w-[650px] md:grid-cols-2 xl:w-[1000px] xl:grid-cols-3">
   {
     data.map((product) => {
@@ -17,4 +17,60 @@ import { data } from './ProductsData.json';
       );
     })
   }
+</div> --><!-- GRID SIN GOLDEN TOURS -->
+<div
+  class="mx-auto my-14 grid grid-cols-1 justify-items-center gap-12 md:w-[650px] md:grid-cols-2 xl:w-[1000px] xl:grid-cols-3">
+  <CardProduct
+    title={data[0].title}
+    image={data[0].image}
+    description={data[0].description}
+    link={data[0].link}
+  />
+  <CardProduct
+    title={data[1].title}
+    image={data[1].image}
+    description={data[1].description}
+    link={data[1].link}
+  />
+  <CardProduct
+    title={data[2].title}
+    image={data[2].image}
+    description={data[2].description}
+    link={data[2].link}
+  />
+  <div class="xl:hidden">
+    <CardProduct
+      title={data[3].title}
+      image={data[3].image}
+      description={data[3].description}
+      link={data[3].link}
+    />
+  </div>
+
+  <div class="md:col-span-2 xl:hidden">
+    <CardProduct
+      title={data[4].title}
+      image={data[4].image}
+      description={data[4].description}
+      link={data[4].link}
+    />
+  </div>
+  <div
+    class="mx-auto hidden w-[1000px] justify-center gap-12 xl:flex">
+    <CardProduct
+      title={data[3].title}
+      image={data[3].image}
+      description={data[3].description}
+      link={data[3].link}
+    />
+
+    <div class="md:col-span-2 xl:col-auto">
+      <CardProduct
+        title={data[4].title}
+        image={data[4].image}
+        description={data[4].description}
+        link={data[4].link}
+      />
+    </div>
+  </div>
 </div>

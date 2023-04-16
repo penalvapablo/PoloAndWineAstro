@@ -54,7 +54,7 @@ const NavHome = () => {
           <a
             href="/about"
             className="duration-200 hover:text-five">
-            Sobre nostrosos
+            Sobre nosotros
           </a>
         </li>
         <li>

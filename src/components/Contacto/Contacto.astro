@@ -3,30 +3,15 @@ import { Image } from '@astrojs/image/components';
 import logo_mobile from '../../assets/logo-mobile.png';
 import logo from '../../assets/Logo.png';
 import SocialLinks from './SocialLinks';
+import chamber from '../../assets/chamber.jpg';
 ---
 
 <footer
   id="contacto"
   class="flex flex-col items-center bg-two px-[5%] pb-14 pt-10 xl:pb-1">
   <div
-    class="flex flex-col lg:mb-6 lg:w-[1000px] lg:flex-row lg:items-center lg:justify-between">
-    <Image
-      alt="logo"
-      src={logo_mobile}
-      width={400}
-      height={235}
-      quality={100}
-      class="w xsm:hidden"
-    />
-    <Image
-      alt="logo"
-      src={logo}
-      width={500}
-      height={293}
-      quality={100}
-      class="hidden h-[293px] xsm:inline"
-    />
-    <div class="my-10 flex flex-col lg:w-[500px]">
+    class="mb-10 flex flex-col items-center gap-10 lg:mb-6 xl:my-14 xl:w-[1200px] xl:flex-row xl:justify-between">
+    <div class="flex flex-col xl:w-[225.88px]">
       <p class="text-center font-text text-2xl text-one">
         Teléfono
       </p>
@@ -52,6 +37,31 @@ import SocialLinks from './SocialLinks';
       </p>
       <SocialLinks />
     </div>
+
+    <Image
+      alt="logo"
+      src={logo_mobile}
+      width={400}
+      height={235}
+      quality={100}
+      class="xsm:hidden"
+    />
+    <Image
+      alt="logo"
+      src={logo}
+      width={500}
+      height={293}
+      quality={100}
+      class="hidden max-h-[293px] xsm:inline"
+    />
+    <Image
+      alt="logo"
+      src={chamber}
+      width={225.89}
+      height={237}
+      quality={100}
+      class=""
+    />
   </div>
   <p class="font-text text-sm text-one">
     <span class="font-bold">Polo & Wine.</span> All rights reserved
