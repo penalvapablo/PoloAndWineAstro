@@ -5,42 +5,42 @@
       "titleSize": "3rem",
       "image": "futbol",
       "description": "Vive lo mejor de la Premier League y descubre el ambiente vibrante de ciudades como Liverpool, Manchester o Londres.",
-      "link": "futbol/ingles"
+      "link": "productos/futbol/ingles"
     },
     {
       "title":"Polo",
       "titleSize": "3rem",
       "image": "polo",
       "description": "Polo&Wine te invita a disfrutar de una experiencia que combina naturaleza, gastronomía y lo mejor del polo.",
-      "link": "polo"
+      "link": "productos/polo"
     },
     {
       "title":"Salidas Grupales Garantizadas",
       "titleSize": "2.2rem",
       "image": "salidas",
       "description": "En estos tours visitaremos las magníficas Islas Británicas (Inglaterra, Escocia, Irlanda del Norte, República Irlanda y Gales).",
-      "link": "ukTours"
+      "link": "productos/ukTours"
     },
     {
       "title":"Automovilismo",
       "titleSize": "2.4rem",
       "image": "autos",
       "description": "El Gran Premio de Gran Bretaña de Fórmula 1 en Silverstone es uno de los eventos más importantes del calendario de la Fórmula 1. ",
-      "link": "autos/formula1"
+      "link": "productos/autos/formula1"
     },
     {
       "title":"Tenis",
       "titleSize": "3rem",
       "image": "tenis",
       "description": "Disfruta en vivo y en directo del Campeonato de Wimbledon y la Laver Cup.",
-      "link": "tenis"
+      "link": "productos/tenis"
     },
     {
       "title":"Tours",
       "titleSize": "3rem",
       "image": "tours",
       "description": "Contamos con una gran variedad de tours, desde recorridos por los lugares más emblemáticos de Londres.",
-      "link": "londonTours"
+      "link": "https://www.gttickets.com/en?r=poloandwine.gttickets.com"
     }
   ]
 }
