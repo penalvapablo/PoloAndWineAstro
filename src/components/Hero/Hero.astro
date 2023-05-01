@@ -38,3 +38,22 @@ import Background from './Background.astro';
     <Burger client:load />
   </div>
 </section>
+<script>
+  const text: HTMLParagraphElement | null =
+    window.document.querySelector('p')!;
+  const arr = [text];
+
+  console.log(text);
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('opacity-100');
+      } else {
+        // entry.target.classList.add('opacity-0');
+      }
+    });
+  });
+
+  observer.observe(text);
+</script>
