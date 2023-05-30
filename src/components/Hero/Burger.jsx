@@ -25,8 +25,8 @@ const Burger = () => {
       <div
         className={`  flex h-[50px] w-screen  justify-center  border-t-one bg-two`}>
         <button
-          id="burger menu"
-          aria-label="burger menu"
+          id="burger-menu"
+          aria-label="burger-menu"
           onClick={mobileNavFn}>
           <FontAwesomeIcon
             icon={faBars}
