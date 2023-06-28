@@ -45,9 +45,9 @@ const NavHome = () => {
         </li>
         <li>
           <a
-            href="/#business"
+            href="/#servicios"
             className="duration-200 hover:text-five">
-            Business Solutions
+            Servicios
           </a>
         </li>
         <li>

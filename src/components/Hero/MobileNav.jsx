@@ -34,9 +34,9 @@ const MobileNav = ({ mobileNavFn, mobileNav }) => {
           </li>
           <li>
             <a
-              href="/#business"
+              href="/#servicios"
               onClick={mobileNavFn}>
-              Business Solutions
+              Servicios
             </a>
           </li>
           <li>
