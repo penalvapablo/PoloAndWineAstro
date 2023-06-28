@@ -32,7 +32,7 @@ const SocialLinks = () => {
         />
       </a>
       <a
-        href="https://www.facebook.com/soledadsaltoconsulting"
+        href="https://www.facebook.com/poloandwine"
         rel="noreferrer"
         target={'_blank'}
         aria-label="link a facebook">
