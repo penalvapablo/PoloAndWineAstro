@@ -31,16 +31,16 @@ const NavHome = () => {
         </li>
         <li>
           <a
-            href="/#productos"
+            href="/#paquetes"
             className="duration-200 hover:text-five">
-            Productos
+            Paquetes
           </a>
         </li>
         <li>
           <a
             href="/#cursos"
             className="duration-200 hover:text-five">
-            Cursos
+            Cursos de inglés
           </a>
         </li>
         <li>

@@ -1,0 +1,69 @@
+---
+import Consultar from '../../../components/Consultar.astro';
+import Contacto from '../../../components/Contacto/Contacto.astro';
+import Burger from '../../../components/Hero/Burger';
+import Nav from '../../../components/Nav.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Quinceañeras en Londres - Polo & Wine">
+  <Nav />
+  <main
+    class="relative bg-five py-10 xl:min-h-[calc(100vh-33.3975rem)] xl:py-20">
+    <h1
+      class="mx-auto w-[90%] text-center font-title text-6xl text-two sm:text-7xl">
+      Quinceañeras en Londres
+    </h1>
+    <p
+      class="mx-auto mt-12 w-[90%] max-w-[50rem] font-text text-lg text-two">
+      ¡Celebra tus 15 años de ensueño en la hermosa ciudad
+      de Londres! Disfruta de momentos mágicos y recuerdos
+      inolvidables en una de las capitales más fascinantes
+      del mundo. Nuestro programa exclusivo te ofrece una
+      experiencia única para celebrar este hito tan especial
+      en tu vida.
+      <br /><br />
+      Descubre Londres: Explora los lugares más emblemáticos
+      de la ciudad, desde el majestuoso Palacio de Buckingham
+      hasta la imponente Torre de Londres. Crea recuerdos inolvidables
+      junto a tus seres queridos en estos icónicos escenarios.
+      <br /><br />
+      Sesión de fotos profesional: Inmortaliza este momento único
+      con una sesión de fotos profesional en los rincones más
+      pintorescos de Londres. Captura tu belleza radiante y la
+      esencia de este día tan especial para compartir con tus
+      amigos y familiares.
+      <br /><br />
+      Cena de gala: Celebra tu quinceañera con una elegante cena
+      de gala en un lugar exclusivo de Londres. Saborea exquisitos
+      platos y brinda por esta ocasión especial. Será una velada
+      inolvidable llena de glamour y elegancia.
+      <br /><br />
+      Experiencias inolvidables: Completa tu programa con experiencias
+      únicas, como paseos en el London Eye, espectáculos en el
+      West End o compras en las famosas tiendas de Oxford Street.
+      Vive momentos inolvidables que harán de tu viaje en Londres
+      una experiencia mágica.
+      <br /><br />
+      Nuestro equipo se encargará de cada detalle para que disfrutes
+      al máximo sin preocupaciones. Déjanos hacer de tu viaje
+      en Londres un sueño hecho realidad.
+      <br /><br />
+      Contáctanos para obtener más información. ¡Estamos emocionados
+      de ser parte de tu celebración especial en la asombrosa
+      ciudad de Londres!
+    </p>
+
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfnFexc6Ye3wQItMtAPxpC8sgOguIycWCzt8adCzBywC_sRfA/viewform"
+      rel="noreferrer"
+      target="_blank"
+      aria-label="link to form"
+      class="text mx-auto mb-4 mt-8 block w-80 rounded-xl bg-two py-[0.6rem] text-center font-text text-xl font-semibold leading-7 tracking-wide text-one duration-200 hover:bg-one hover:text-two"
+      >Consultar</a
+    >
+
+    <Burger client:load />
+  </main>
+  <Contacto />
+</Layout>
